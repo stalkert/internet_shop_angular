@@ -3,7 +3,7 @@
 /.tmp
 /.sass-cache
 /bower_components
-/.idea/
+.idea/*.*
 
 .idea/encodings.xml
 .idea/workspace.xml
