@@ -1,0 +1,16 @@
+{
+  "name": "testua",
+  "version": "0.0.1",
+  "dependencies": {
+    "angular": "^1.4.0",
+    "angular-route": "^1.4.0",
+    "bootstrap" : "3.3.2",
+    "es5-shim"  : "^4.0.5",
+    "bootstrap-sass": "^ 3.3.6"
+  },
+  "devDependencies": {
+    "angular-mocks": "^1.4.0"
+  },
+  "appPath": "app",
+  "moduleName": "testuaApp"
+}

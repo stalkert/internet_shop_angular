@@ -1,0 +1,190 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css(.) styles/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+  </head>
+  <body ng-app="testua">
+
+
+    <!-- Add your site or application content here -->
+    <div id="wrapper-bg-second-line">
+      <div class="container">
+        <div class="row" id="second-line">
+          <div class="col-md-2 col-md-offset-2 col-sm-6 col-xs-12" >
+            <img id="logo" src="images/logo.png">
+          </div>
+          <div  id="contacts" class="col-md-offset-3 col-md-2 col-sm-2 col-xs-3">
+            <div>
+              <i class="glyphicon glyphicon-earphone red-color"><span><b> 0 800 777 555</b></span></i>
+            </div>
+            <div>
+              <i class="glyphicon glyphicon-envelope red-color"><span>ngv.z.tune@gmail.com</span></i>
+            </div>
+          </div>
+          <div class="col-md-2 col-sm-2 col-xs-3">
+            <div>
+              <a><i class="glyphicon glyphicon-log-in red-color"><span>Вход</span></i></a>
+            </div>
+            <div>
+              <a><i class="glyphicon glyphicon-check red-color"><span>Регистрация</span></i></a>
+            </div>
+          </div>
+          <div  class="col-md-1 col-sm-2 col-xs-3">
+            <i class="glyphicon glyphicon-shopping-cart red-color" ><span>Корзина</span></i>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="wrapper-bg-black">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-offset-3 col-md-9">
+            <ul id="navbar" class="nav navbar-nav ">
+              <li class="active"><a href="#/main">Главная</a></li>
+              <li><a href="#/oplata_i_dostavka">Оплата и доставка</a></li>
+              <li><a href="#">О нас</a></li>
+              <li><a href="#">Контакты</a></li>
+            </ul>
+          </div>
+
+        </div>
+
+
+      </div>
+    </div>
+
+    <div class="wrapper-bg">
+      <div class="container">
+        <div class="row" id="third-line">
+
+          <div class="col-md-3 col-sm-3 col-xs-12" id="category-list">
+            <div id="wrapper-search">
+              <input id="search" type="text" class="form-control" placeholder="Поиск">
+              <button id="button-search" class="btn btn-default" type="button"><i class="glyphicon glyphicon-search"></i></button>
+            </div>
+            <button id='catalog' type="button" class="btn btn-danger">Каталог</button>
+            <ul  class="nav">
+
+              <li><a href="#" >Оборудование</a></li>
+              <li><a href="#">Электронные компоненты, радиодетали</a></li>
+              <li><a href="#">Кнопки,переключатели, индикаторы</a></li>
+              <li><a href="#">Инструменты</a></li>
+              <li><a href="#">Расходные материалы</a></li>
+              <li><a href="#" >Провода,шнуры, кабели</a></li>
+              <li><a href="#">Трансформаторы</a></li>
+              <li><a href="#">Разъемы</a></li>
+              <li><a href="#">Системы охлаждения</a></li>
+              <li><a href="#">Блоки, элементы питания</a></li>
+              <li><a href="#">Источники звука</a></li>
+              <li><a href="#">Корпуса</a></li>
+
+            </ul>
+          </div>
+          <div class="container" ng-view>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row" id="footer">
+      <div class="container" >
+        <div class="row">
+          <h2 class="col-md-12 gray-color text-center" >Наши контакты</h2>
+        </div>
+
+        <div class="col-md-6" id="contacts">
+
+          <div class="contact-information">
+            <i class="glyphicon glyphicon-earphone gray-color"></i>
+            <p>Телефон</p>
+            <p>+38 066 597 94 89</p>
+          </div>
+          <div class="contact-information">
+            <i class="glyphicon glyphicon-envelope gray-color"></i>
+            <p>E-mail</p>
+            <p>ngv.z.tune@gmail.com</p>
+          </div>
+          <div class="contact-information">
+            <i class="glyphicon glyphicon-time gray-color"></i>
+            <p>Время работы</p>
+            <p>Пн - Пт с 10 до 19</p>
+          </div>
+        </div>
+
+        <form class="form-horizontal col-md-6" role="form">
+          <div class="form-group">
+            <div class="col-md-8 ">
+              <input type="text" class="form-control" placeholder="Имя" >
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="col-md-8">
+              <input type="email" class="form-control" placeholder="E-mail" >
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="col-md-8">
+              <input type="text" class="form-control" placeholder="Тема" >
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="col-md-8">
+              <textarea placeholder="Ваш текст" class="form-control" ></textarea>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="col-md-8" id="sent">
+              <button type="submit" class="btn btn-default">Отправить</button>
+            </div>
+          </div>
+        </form>
+
+
+
+      </div>
+    </div>
+
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
+     <script>
+       !function(A,n,g,u,l,a,r){A.GoogleAnalyticsObject=l,A[l]=A[l]||function(){
+       (A[l].q=A[l].q||[]).push(arguments)},A[l].l=+new Date,a=n.createElement(g),
+       r=n.getElementsByTagName(g)[0],a.src=u,r.parentNode.insertBefore(a,r)
+       }(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+       ga('create', 'UA-XXXXX-X');
+       ga('send', 'pageview');
+    </script>
+
+    <!-- build:js(.) scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="bower_components/es5-shim/es5-shim.js"></script>
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="bower_components/bootstrap-sass/assets/javascripts/bootstrap.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+        <!-- build:js({.tmp,app}) scripts/scripts.js -->
+        <script src="scripts/app.js"></script>
+        <script src="scripts/controllers/main.js"></script>
+        <script src="scripts/controllers/about.js"></script>
+    <script src="scripts/controllers/pay-and-delivery.js"></script>
+        <!-- endbuild -->
+</body>
+</html>

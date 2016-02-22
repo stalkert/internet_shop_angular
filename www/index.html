@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		.novalid{
+			border:1px soli red;
+			color: red;
+			display: inline-block;
+		}
+	</style>
+</head>
+<body>
+<form action="" id="form1">
+	<label for="name">Ваше имя:</label><input type="text" id="name"><br><br>
+	<label for="email">Ваше мыло:</label><input type="text" id="email"><br><br>
+	<label for="phone">ваш телефон:</label><input type="text" id="phone"><br><br>
+	<input type="submit" value="Отправить">
+</form>
+<div id="result"></div>
+<script>
+	var nameUser = document.getElementById('name');
+	
+	var emailUser = document.querySelector('#email');
+	var phoneUser = document.querySelector('#phone');
+	var resultUser = document.querySelector('#result');
+	var sub = document.querySelector('input[type=submit]');
+	sub.addEventListener('click', sendData);
+	function sendData(e){
+		e.preventDefault();
+		if(!nameUser.value){
+			nameUser.insertAdjacentHTML("afterEnd","<span class='novalid'>&nbsp;Заполните имя!</span>");
+		}else if(nameUser.value.search(/\d/) != -1){
+			nameUser.insertAdjacentHTML("afterEnd","<span class='novalid'>&nbsp;Не корректное имя!</span>");
+
+		}
+		if(!emailUser.value){
+			emailUser.insertAdjacentHTML("afterEnd","<span class='novalid'>&nbsp;Заполните email!</span>");
+		}else if(emailUser.value.search(/([\w\.]+)@([\w\.]+)\.(\w+)/g) == -1){
+			emailUser.insertAdjacentHTML("afterEnd","<span class='novalid'>&nbsp;Не корректный email!</span>");
+
+		}
+		if(!phoneUser.value){
+			phoneUser.insertAdjacentHTML("afterEnd","<span class='novalid'>&nbsp;Заполните телефон!</span>");
+		}else if(phoneUser.value.search(/^\s*(?:\+?(\d{1,3}))?([-. (]*(\d{3})[-. )]*)?((\d{3})[-. ]*(\d{2,4})(?:[-.x ]*(\d+))?)\s*$/gm) == -1){
+			phoneUser.insertAdjacentHTML("afterEnd","<span class='novalid'>&nbsp;Не корректный телефон!</span>");
+		}
+	}
+</script>	
+</body>
+</html>
