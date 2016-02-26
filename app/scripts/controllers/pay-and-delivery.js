@@ -1,6 +1,4 @@
-/**
- * Created by ITaranenko on 2/22/2016.
- */
+'use strict';
 angular.module('testua')
   .controller('PayAndDelivery',function(){
     this.description = 'Здесь будет оплата и доставка';

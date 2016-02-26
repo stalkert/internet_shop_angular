@@ -2,10 +2,10 @@
 
 /**
  * @ngdoc function
- * @name testuaApp.controller:MainCtrl
+ * @name testua.controller:MainCtrl
  * @description
  * # MainCtrl
- * Controller of the testuaApp
+ * Controller of the testua
  */
 angular.module('testua')
   .controller('MainCtrl', function () {

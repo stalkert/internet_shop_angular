@@ -1,0 +1,16 @@
+  <div id="wrapper-search">
+    <input id="search" type="text" class="form-control" placeholder="Поиск">
+    <button id="button-search" class="btn btn-default" type="button"><i class="glyphicon glyphicon-search"></i></button>
+  </div>
+  <button id='catalog' type="button" class="btn btn-danger">Каталог</button>
+  <ul  class="nav category-lev-0" ng-controller="ListCategory as categories">
+
+    <li ng-repeat="cat in categories.item"><a href="#">{{cat.catName}}</a>
+    <ul class="nav sub-category-lev-1"><li ng-repeat="subcat1 in cat.listSubCat"><a href="#" >{{subcat1.subCatName}}</a>
+      <ul class="nav sub-category-lev-2"><li ng-repeat="subcat2 in subcat1.listSubCat"><a href="#" >{{subcat2.subCatName}}</a>
+    </li></ul>
+    </li>
+
+
+  </ul>
+

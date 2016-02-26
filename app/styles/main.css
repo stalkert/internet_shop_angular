@@ -9239,3 +9239,54 @@ a {
 #wrapper-bg-second-line {
   background-color: #2b2929;
 }
+
+/* line 383, ../scss/main.scss */
+.category-lev-0 {
+  position: relative;
+}
+/* line 385, ../scss/main.scss */
+.category-lev-0 li {
+  position: static;
+}
+/* line 387, ../scss/main.scss */
+.category-lev-0 li .sub-category-lev-1 {
+  position: absolute;
+  left: 100%;
+  top: 0;
+  z-index: 100;
+  background-color: #fff;
+  width: 303px;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 1s ease 1s,visibility 1s ease 1s;
+}
+/* line 397, ../scss/main.scss */
+.category-lev-0 li .sub-category-lev-1 .sub-category-lev-2 {
+  position: absolute;
+  left: 100%;
+  top: 0;
+  z-index: 100;
+  background-color: #fff;
+  width: 303px;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 1s ease 1s,visibility 1s ease 1s;
+}
+/* line 409, ../scss/main.scss */
+.category-lev-0 li .sub-category-lev-1 > li:hover .sub-category-lev-2 {
+  z-index: 200;
+  visibility: visible;
+  opacity: 1;
+  transition-delay: 0s;
+  transition-duration: 0s;
+  transition-property: all;
+}
+/* line 418, ../scss/main.scss */
+.category-lev-0 li:hover .sub-category-lev-1 {
+  z-index: 200;
+  visibility: visible;
+  opacity: 1;
+  transition-delay: 0s;
+  transition-duration: 0s;
+  transition-property: all;
+}

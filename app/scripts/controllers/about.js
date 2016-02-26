@@ -2,10 +2,10 @@
 
 /**
  * @ngdoc function
- * @name testuaApp.controller:AboutCtrl
+ * @name testua.controller:AboutCtrl
  * @description
  * # AboutCtrl
- * Controller of the testuaApp
+ * Controller of the testua
  */
 angular.module('testua')
   .controller('AboutCtrl', function () {
