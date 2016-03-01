@@ -1,0 +1,43 @@
+[
+  {
+    "title":"Мультиметр цифровой",
+    "cod":"MS8239C",
+    "brend":"Mastech",
+    "price":3233,
+    "img":"images/item4.png",
+    "count": 2
+  },
+  {
+    "title":"Мультиметр аналоговый",
+    "cod":"BS8239C",
+    "brend":"Mastech",
+    "price":2400,
+    "img":"images/item4.png",
+    "count": 3
+  },
+  {
+    "title":"Звонилка",
+    "cod":"BS8239C",
+    "brend":"Bosh",
+    "price":5000,
+    "img":"images/item4.png",
+    "count": 3
+  },
+  {
+    "title":"Мультиметр новый",
+    "cod":"BS8239C",
+    "brend":"Master",
+    "price":1100,
+    "img":"images/item4.png",
+    "count": 3
+  },
+  {
+    "title":"Мультиметр б/у",
+    "cod":"BS8239C",
+    "brend":"Mastech",
+    "price":2900,
+    "img":"images/item4.png",
+    "count": 3
+  }
+
+]
