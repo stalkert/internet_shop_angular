@@ -4,7 +4,8 @@ angular.module('testua')
         return {
             restrict: 'E',
             templateUrl: 'views/templates/products-template.html',
-            controller: 'ListProducts',
-            controllerAs: 'products'
+          controller: 'ListProducts',
+          controllerAs: 'products'
+
         };
     });

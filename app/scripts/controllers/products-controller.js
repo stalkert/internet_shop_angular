@@ -1,8 +1,9 @@
 'use strict';
 angular.module('testua')
-    .controller('ListProducts', function ($http) {
-        var listProduct = this;
-        $http.get('data/product.json').success(function (data) {
-            listProduct.item = data;
-        });
-    });
+  .controller('ListProducts', function (Product) {
+    var listProduct = this;
+    Product.getProductsAll()
+      .success(function (data) {
+        listProduct.item = data;
+      });
+  });
