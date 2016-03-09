@@ -6,9 +6,9 @@
   <button id='catalog' type="button" class="btn btn-danger"><a ng-href="#/products">Каталог</a></button>
   <ul  class="nav category-lev-0">
 
-    <li ng-repeat="cat in categories.item"><a href="#">{{cat.catName}}</a>
-    <ul class="nav sub-category-lev-1"><li ng-repeat="subcat1 in cat.listSubCat"><a href="#" >{{subcat1.subCatName}}</a>
-      <ul class="nav sub-category-lev-2"><li ng-repeat="subcat2 in subcat1.listSubCat"><a href="#" >{{subcat2.subCatName}}</a>
+    <li ng-repeat="cat in categories.listMainCategories"><a href="#">{{cat.catName}}</a>
+    <ul class="nav sub-category-lev-1"><li ng-repeat="subcat1 in cat.listSubCat"><a href="#" >{{categories.getCategoryById(subcat1);}}</a>
+      <ul class="nav sub-category-lev-2"><li ng-repeat="subcat2 in categories.getCategoryObjById(subcat1).listSubCat"><a href="#" >{{categories.getCategoryById(subcat2);}}</a>
     </li></ul>
     </li>
 

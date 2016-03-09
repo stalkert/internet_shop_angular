@@ -1,122 +1,119 @@
 [
   {
     "catName": "Автоматика",
+    "main": true,
+    "categoryId": 1,
     "listSubCat": [
-      {
-        "subCatName": "Датчики и преобразователи",
-        "listSubCat": [
-          {
-            "subCatName": "Датчики индукционные"
-          },
-          {
-            "subCatName": "Датчики объема"
-          },
-          {
-            "subCatName": "Датчики фотооптические"
-          }
-        ]
-      },
-      {
-        "subCatName": "Регулировка и управление",
-        "listSubCat": [
-          {
-            "subCatName": "Реле времени"
-          },
-          {
-            "subCatName": "Счетчики"
-          }
-        ]
-      }
+      2,
+      3
     ]
   },
   {
+    "catName": "Датчики и преобразователи",
+    "main": false,
+    "categoryId": 2,
+    "listSubCat": [
+      4,
+      5,
+      6
+    ]
+  },
+  {
+    "catName": "Регулировка и управление",
+    "main": false,
+    "categoryId": 3,
+    "listSubCat": [
+      7,
+      8
+    ]
+  },
+  {
+    "catName": "Датчики индукционные",
+    "main": false,
+    "categoryId": 4,
+    "listSubCat": false
+  },
+  {
+    "catName": "Датчики объема",
+    "main": false,
+    "categoryId": 5,
+    "listSubCat": false
+  },
+  {
+    "catName": "Датчики фотооптические",
+    "main": false,
+    "categoryId": 6,
+    "listSubCat": false
+  },
+  {
+    "catName": "Реле времени",
+    "main": false,
+    "categoryId": 7,
+    "listSubCat": false
+  },
+  {
+    "catName": "Счетчики",
+    "main": false,
+    "categoryId": 8,
+    "listSubCat": false
+  },
+   {
     "catName": "Автомобильные аудиосистемы",
+    "main": true,
+    "categoryId": 9,
     "listSubCat": [
-      {
-        "subCatName": "Звук",
-        "listSubCat": [
-          {
-            "subCatName": "Нестандартный"
-          },
-          {
-            "subCatName": "Громкий"
-          },
-          {
-            "subCatName": "Тихий"
-          }
-        ]
-      },
-      {
-        "subCatName": "Басы",
-        "listSubCat": [
-          {
-            "subCatName": "Супербасс"
-          },
-          {
-            "subCatName": "Данс"
-          }
-        ]
-      }
+      10,
+      11
     ]
   },
   {
-    "catName": "Автомобильные аудиосистемы2",
+    "catName": "Звук",
+    "main": false,
+    "categoryId": 10,
     "listSubCat": [
-      {
-        "subCatName": "Звук2",
-        "listSubCat": [
-          {
-            "subCatName": "Крутой звук"
-          },
-          {
-            "subCatName": "Лажа"
-          },
-          {
-            "subCatName": "Популярный"
-          }
-        ]
-      },
-      {
-        "subCatName": "Басы2",
-        "listSubCat": [
-          {
-            "subCatName": "Мега басс"
-          },
-          {
-            "subCatName": "Гипер басс"
-          }
-        ]
-      }
+      12,
+      13,
+      14
     ]
   },
   {
-    "catName": "Автомобильные аудиосистемы 3",
+    "catName": "Басы",
+    "main": false,
+    "categoryId": 11,
     "listSubCat": [
-      {
-        "subCatName": "Звук3",
-        "listSubCat": [
-          {
-            "subCatName": "Крейзи"
-          },
-          {
-            "subCatName": "Башню сорвет"
-          },
-          {
-            "subCatName": "Улет"
-          }
-        ]
-      },
-      {
-        "subCatName": "Басы3",
-        "listSubCat": [
-          {
-            "subCatName": "100 герц"
-          },
-          {
-            "subCatName": "200 герц"
-          }
-        ]
-      }
+      15,
+      16
     ]
+  },
+  {
+    "catName": "Нестандартный",
+    "main": false,
+    "categoryId": 12,
+    "listSubCat": false
+  },
+  {
+    "catName": "Громкий",
+    "main": false,
+    "categoryId": 13,
+    "listSubCat": false
+  },
+  {
+    "catName": "Тихий",
+    "main": false,
+    "categoryId": 14,
+    "listSubCat": false
+  },
+  {
+    "catName": "Супербасс",
+    "main": false,
+    "categoryId": 15,
+    "listSubCat": false
+  },
+  {
+    "catName": "Данс",
+    "main": false,
+    "categoryId": 16,
+    "listSubCat": false
   }
 ]
+

@@ -8,14 +8,13 @@ angular.module('testua')
       },
       getProductById: function (productId) {
         debugger;
-         return  $http.get('data/product.json').success(function (data) {
+        var data2;
+          $http.get('data/product.json').success(function (data) {
 
-           var data1 = data.filter(function(item){
-             return item.id ===productId;
-           });
-         return data1[0];
+          data2= data;
+            return data2;
         });
-
+      return data2;
       }
     };
   });

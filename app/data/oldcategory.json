@@ -1,0 +1,123 @@
+[
+  {
+    "catName": "Автоматика",
+
+    "listSubCat": [
+      {
+        "subCatName": "Датчики и преобразователи",
+        "listSubCat": [
+          {
+            "subCatName": "Датчики индукционные"
+          },
+          {
+            "subCatName": "Датчики объема"
+          },
+          {
+            "subCatName": "Датчики фотооптические"
+          }
+        ]
+      },
+      {
+        "subCatName": "Регулировка и управление",
+        "listSubCat": [
+          {
+            "subCatName": "Реле времени"
+          },
+          {
+            "subCatName": "Счетчики"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "catName": "Автомобильные аудиосистемы",
+    "listSubCat": [
+      {
+        "subCatName": "Звук",
+        "listSubCat": [
+          {
+            "subCatName": "Нестандартный"
+          },
+          {
+            "subCatName": "Громкий"
+          },
+          {
+            "subCatName": "Тихий"
+          }
+        ]
+      },
+      {
+        "subCatName": "Басы",
+        "listSubCat": [
+          {
+            "subCatName": "Супербасс"
+          },
+          {
+            "subCatName": "Данс"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "catName": "Автомобильные аудиосистемы2",
+    "listSubCat": [
+      {
+        "subCatName": "Звук2",
+        "listSubCat": [
+          {
+            "subCatName": "Крутой звук"
+          },
+          {
+            "subCatName": "Лажа"
+          },
+          {
+            "subCatName": "Популярный"
+          }
+        ]
+      },
+      {
+        "subCatName": "Басы2",
+        "listSubCat": [
+          {
+            "subCatName": "Мега басс"
+          },
+          {
+            "subCatName": "Гипер басс"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "catName": "Автомобильные аудиосистемы 3",
+    "listSubCat": [
+      {
+        "subCatName": "Звук3",
+        "listSubCat": [
+          {
+            "subCatName": "Крейзи"
+          },
+          {
+            "subCatName": "Башню сорвет"
+          },
+          {
+            "subCatName": "Улет"
+          }
+        ]
+      },
+      {
+        "subCatName": "Басы3",
+        "listSubCat": [
+          {
+            "subCatName": "100 герц"
+          },
+          {
+            "subCatName": "200 герц"
+          }
+        ]
+      }
+    ]
+  }
+]
