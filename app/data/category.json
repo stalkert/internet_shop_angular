@@ -3,27 +3,32 @@
     "catName": "Автоматика",
     "listSubCat": [
       {
-        "subCatName": "Датчики и преобразователи",
+        "catName": "Датчики и преобразователи",
         "listSubCat": [
           {
-            "subCatName": "Датчики индукционные"
+            "catName": "Датчики индукционные",
+            "categoryId":1
           },
           {
-            "subCatName": "Датчики объема"
+            "catName": "Датчики объема",
+            "categoryId":2
           },
           {
-            "subCatName": "Датчики фотооптические"
+            "catName": "Датчики фотооптические",
+            "categoryId":3
           }
         ]
       },
       {
-        "subCatName": "Регулировка и управление",
+        "catName": "Регулировка и управление",
         "listSubCat": [
           {
-            "subCatName": "Реле времени"
+            "catName": "Реле времени",
+            "categoryId":4
           },
           {
-            "subCatName": "Счетчики"
+            "catName": "Счетчики",
+            "categoryId":5
           }
         ]
       }
@@ -33,27 +38,32 @@
     "catName": "Автомобильные аудиосистемы",
     "listSubCat": [
       {
-        "subCatName": "Звук",
+        "catName": "Звук",
         "listSubCat": [
           {
-            "subCatName": "Нестандартный"
+            "catName": "Нестандартный",
+            "categoryId":6
           },
           {
-            "subCatName": "Громкий"
+            "catName": "Громкий",
+            "categoryId":7
           },
           {
-            "subCatName": "Тихий"
+            "catName": "Тихий",
+            "categoryId":8
           }
         ]
       },
       {
-        "subCatName": "Басы",
+        "catName": "Басы",
         "listSubCat": [
           {
-            "subCatName": "Супербасс"
+            "catName": "Супербасс",
+            "categoryId":9
           },
           {
-            "subCatName": "Данс"
+            "catName": "Данс",
+            "categoryId":10
           }
         ]
       }
@@ -63,27 +73,32 @@
     "catName": "Автомобильные аудиосистемы2",
     "listSubCat": [
       {
-        "subCatName": "Звук2",
+        "catName": "Звук2",
         "listSubCat": [
           {
-            "subCatName": "Крутой звук"
+            "catName": "Крутой звук",
+            "categoryId":11
           },
           {
-            "subCatName": "Лажа"
+            "catName": "Лажа",
+            "categoryId":12
           },
           {
-            "subCatName": "Популярный"
+            "catName": "Популярный",
+            "categoryId":13
           }
         ]
       },
       {
-        "subCatName": "Басы2",
+        "catName": "Басы2",
         "listSubCat": [
           {
-            "subCatName": "Мега басс"
+            "catName": "Мега басс",
+            "categoryId":14
           },
           {
-            "subCatName": "Гипер басс"
+            "catName": "Гипер басс",
+            "categoryId":15
           }
         ]
       }
@@ -93,27 +108,67 @@
     "catName": "Автомобильные аудиосистемы 3",
     "listSubCat": [
       {
-        "subCatName": "Звук3",
+        "catName": "Звук3",
         "listSubCat": [
           {
-            "subCatName": "Крейзи"
+            "catName": "Крейзи",
+            "categoryId":15
           },
           {
-            "subCatName": "Башню сорвет"
+            "catName": "Башню сорвет",
+            "categoryId":16
           },
           {
-            "subCatName": "Улет"
+            "catName": "Улет",
+            "categoryId":17
           }
         ]
       },
       {
-        "subCatName": "Басы3",
+        "catName": "Басы3",
         "listSubCat": [
           {
-            "subCatName": "100 герц"
+            "catName": "100 герц",
+            "categoryId":18
           },
           {
-            "subCatName": "200 герц"
+            "catName": "200 герц",
+            "categoryId":19
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "catName": "Пышка",
+    "listSubCat": [
+      {
+        "catName": "Булка",
+        "listSubCat": [
+          {
+            "catName": "Сладкие",
+            "categoryId":20
+          },
+          {
+            "catName": "Соленые",
+            "categoryId":21
+          },
+          {
+            "catName": "Здобные",
+            "categoryId":22
+          }
+        ]
+      },
+      {
+        "catName": "Бублик",
+        "listSubCat": [
+          {
+            "catName": "Круглые",
+            "categoryId":23
+          },
+          {
+            "catName": "Квадратные",
+            "categoryId":24
           }
         ]
       }
