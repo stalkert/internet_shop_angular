@@ -1,7 +1,7 @@
 [
   {
     "id":1,
-    "categoryId":1,
+    "categoryId":4,
     "title":"Мультиметр цифровой",
     "cod":"MS8239C",
     "brend":"Mastech",
@@ -12,7 +12,7 @@
   },
   {
     "id":2,
-    "categoryId":2,
+    "categoryId":5,
     "title":"Мультиметр аналоговый",
     "cod":"BS8239C",
     "brend":"Mastech",
@@ -23,7 +23,7 @@
   },
   {
     "id":3,
-    "categoryId":3,
+    "categoryId":6,
     "title":"Звонилка",
     "cod":"BS8239C",
     "brend":"Bosh",
@@ -34,7 +34,7 @@
   },
   {
     "id":4,
-    "categoryId":16,
+    "categoryId":7,
     "title":"Мультиметр новый",
     "cod":"BS8239C",
     "brend":"Master",
@@ -45,7 +45,7 @@
   },
   {
     "id":5,
-    "categoryId":21,
+    "categoryId":8,
     "title":"Мультиметр б/у",
     "cod":"BS8239C",
     "brend":"Mastech",
@@ -56,7 +56,7 @@
   },
   {
     "id":6,
-    "categoryId":26,
+    "categoryId":15,
     "title":"Телефон",
     "cod":"6S",
     "brend":"IPhone",

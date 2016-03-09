@@ -1,6 +1,6 @@
 <div class="col-md-3 col-sm-3 col-xs-12" id="category-list">
 <div id="wrapper-search">
-    <input id="search" type="text" class="form-control" placeholder="Поиск" ng-model="query">
+    <input id="search" type="text" class="form-control" placeholder="Поиск" ng-model="search">
     <button id="button-search" class="btn btn-default" type="button"><i class="glyphicon glyphicon-search"></i></button>
   </div>
   <button id='catalog' type="button" class="btn btn-danger"><a ng-href="#/products">Каталог</a></button>
@@ -8,9 +8,9 @@
   <ul  class="nav category-lev-0">
 
 
-    <li ng-repeat="cat in categories.listMainCategories"><a href="#">{{cat.catName}}</a>
+    <li ng-repeat="cat in categories.listMainCategories"><a ng-click="categories.getCategoriesId(cat.categoryId)">{{cat.catName}}</a>
     <ul class="nav sub-category-lev-1"><li ng-repeat="subcat1 in cat.listSubCat"><a href="#" >{{categories.getCategoryById(subcat1);}}</a>
-      <ul class="nav sub-category-lev-2"><li ng-repeat="subcat2 in categories.getCategoryObjById(subcat1).listSubCat"><a href="#" >{{categories.getCategoryById(subcat2);}}</a>
+      <ul class="nav sub-category-lev-2"><li ng-repeat="subcat2 in categories.getCategoryObjById(subcat1).listSubCat"><a ng-click="categories.getCategoriesId(subcat2)" >{{categories.getCategoryById(subcat2);}}</a>
     </li></ul>
     </li>
 
