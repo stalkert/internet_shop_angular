@@ -6,15 +6,9 @@ angular.module('testua')
       getProductsAll: function () {
         return $http.get('data/product.json');
       },
-      getProductById: function (productId) {
-        debugger;
-        var data2;
-          $http.get('data/product.json').success(function (data) {
+      getProductById: function () {
+       return $http.get('data/product.json');
 
-          data2= data;
-            return data2;
-        });
-      return data2;
       }
     };
   });

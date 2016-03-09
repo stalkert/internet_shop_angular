@@ -31,13 +31,13 @@ angular
       .when('/products/:productId', {
         templateUrl: 'views/product-single.html',
         controller:'SingleProduct',
-        controllerAs:'single',
-        resolve: {
+        controllerAs:'single'
+        /*resolve: {
           product : ['$route', 'Product', function ($route, productFactory) {
             var productId = parseInt($route.current.params.productId);
             return productFactory.getProductById(productId);
           }]
-        }
+        }*/
 
       })
       .otherwise({

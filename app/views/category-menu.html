@@ -1,10 +1,12 @@
 <div class="col-md-3 col-sm-3 col-xs-12" id="category-list">
 <div id="wrapper-search">
-    <input id="search" type="text" class="form-control" placeholder="Поиск">
+    <input id="search" type="text" class="form-control" placeholder="Поиск" ng-model="query">
     <button id="button-search" class="btn btn-default" type="button"><i class="glyphicon glyphicon-search"></i></button>
   </div>
   <button id='catalog' type="button" class="btn btn-danger"><a ng-href="#/products">Каталог</a></button>
+
   <ul  class="nav category-lev-0">
+
 
     <li ng-repeat="cat in categories.listMainCategories"><a href="#">{{cat.catName}}</a>
     <ul class="nav sub-category-lev-1"><li ng-repeat="subcat1 in cat.listSubCat"><a href="#" >{{categories.getCategoryById(subcat1);}}</a>

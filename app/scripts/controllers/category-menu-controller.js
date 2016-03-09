@@ -13,13 +13,13 @@ angular.module('testua')
         var oneCat = listCat.item.filter(function (categoryObj) {
           return categoryObj.categoryId === id;
         });
-        return  oneCat[0].catName;
+        return oneCat[0].catName;
       };
       listCat.getCategoryObjById = function (id) {
         var oneCat = listCat.item.filter(function (categoryObj) {
           return categoryObj.categoryId === id;
         });
-        return  oneCat[0];
+        return oneCat[0];
       };
     });
   });

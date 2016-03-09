@@ -1,13 +1,13 @@
 <div class="item-cart col-md-12 ">
   <div class="row">
-    <div class="item-img text-center col-md-6"><img ng-src="{{single.product.img}}"></div>
-    <div class="col-md-6">
-      <div class="item-brend">{{single.product.brend}}</div>
-      <div class="item-name"><strong>{{single.product.cod}}, {{single.product.title}}</strong></div>
-      <div class="item-price"><span>{{single.product.price}} грн.</span></div>
-      <div class="add-to-cart">
-        <strong>Заказать</strong>
-      </div>
+    <div class="item-img-one-product text-center col-md-4"><img ng-src="{{single.productById[0].img}}"></div>
+    <div class="single-product col-md-8">
+      <div class="single-poduct-name"><h2>{{single.productById[0].title}}</h2></div>
+      <div class="single-brend"><span>Производитель:&nbsp</span> <strong>{{single.productById[0].brend}}</strong></div>
+      <div class="single-poduct-model"><span>Модель:&nbsp</span> <strong>{{single.productById[0].cod}}</strong></div>
+      <div class="single-poduct-description"><span>Описание:   </span>{{single.productById[0].description}}</div>
+      <div class="single-product-price">{{single.productById[0].price}} грн.</div>
+      <div class="single-product-add"> Заказать </div>
     </div>
   </div>
 </div>
