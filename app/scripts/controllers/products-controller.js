@@ -5,12 +5,17 @@ angular.module('testua')
     Product.getProductsAll()
       .success(function (data) {
         listProduct.item = data;
-
+        $rootScope.choosenId = [];
         $rootScope.getFilterPoducts = function (product) {
-          if($rootScope.choosenId === 0){
+          var choosenIdLength = $rootScope.choosenId.length;
+          if (choosenIdLength === 0) {
             return true;
-          }else {
-            return product.categoryId === $rootScope.choosenId;
+          } else {
+            for (var i = 0; i < choosenIdLength; i++) {
+              if(product.categoryId === $rootScope.choosenId[i]) {
+                return true;
+              }
+            }
           }
         };
       });

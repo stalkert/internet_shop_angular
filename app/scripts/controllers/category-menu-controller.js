@@ -1,6 +1,6 @@
 'use strict';
 angular.module('testua')
-  .controller('ListCategory', function ($http,$rootScope) {
+  .controller('ListCategory', function ($http, $rootScope) {
     var listCat = this;
     $http.get('data/category.json').success(function (data) {
       listCat.item = data;
@@ -21,13 +21,20 @@ angular.module('testua')
         });
         return oneCat[0];
       };
-      $rootScope.choosenId = 0;
-      listCat.getCategoriesId = function(id){
-        if(listCat.getCategoryObjById(id).listSubCat===false){
-          $rootScope.choosenId = id;
+      listCat.restartSearch = function(){  $rootScope.choosenId=[];};
 
-        }else{
-          
+      listCat.getCategoriesId = function (id) {
+
+        var currentListSubCat = listCat.getCategoryObjById(id).listSubCat;
+        if (currentListSubCat  === false) {
+          $rootScope.choosenId.push(id);
+
+        } else {
+
+          currentListSubCat.forEach(function(elem){
+            listCat.getCategoriesId(elem);
+          });
+
         }
       };
     });

@@ -10,18 +10,22 @@ body {
   background-color: #fff;
   height: 100%;
 }
-#bg-wrapper, html,body{
+
+#bg-wrapper, html, body {
   height: 100%;
 }
-#bg-wrapper-content{
+
+#bg-wrapper-content {
   min-height: 100%;
   padding-bottom: 300px;
 
 }
-#bg-wrapper-footer{
+
+#bg-wrapper-footer {
 
   margin-top: -300px;
 }
+
 button, a, li, input, h1, h2, h3 {
   font-family: 'Oswald', 'Open Sans', sans-serif, Verdana, Arial, Helvetica;
 }
@@ -46,13 +50,15 @@ $red-color: #DA2028;
 @mixin border {
   border: 1px solid #D4D4D4;
 }
-@mixin red_button{
+
+@mixin red_button {
   background-color: #DA2028;
   color: #fff;
   border-radius: 3px;
   font-size: 0.85em;
   padding: 5px 10px;
 }
+
 .gray-line {
   border-bottom: 1px solid #D4D4D4;
 }
@@ -440,6 +446,9 @@ $red-color: #DA2028;
 
 .category-lev-0 {
   position: relative;
+  a {
+    cursor:pointer!important;
+  }
   li {
     position: static;
     .sub-category-lev-1 {
@@ -494,9 +503,10 @@ $red-color: #DA2028;
   }
 
 }
+
 .single-product {
-  position:relative;
-  height:407px;
+  position: relative;
+  height: 407px;
   .single-product-add {
     @include red_button;
     width: 200px;
@@ -507,17 +517,17 @@ $red-color: #DA2028;
   }
   .single-product-price {
     position: absolute;
-    left:20px;
+    left: 20px;
     bottom: 27px;
     color: orange;
     font-size: 1.5em;
     font-weight: bold;
   }
-  span{
-    color:$red-color;
+  span {
+    color: $red-color;
     font-weight: bold;
   }
-  .single-poduct-description{
+  .single-poduct-description {
     font-style: italic;
   }
 }
