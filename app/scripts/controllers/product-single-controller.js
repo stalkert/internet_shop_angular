@@ -1,6 +1,6 @@
 'use strict';
 angular.module('testua')
-  .controller('SingleProduct', function ($route, Product) {
+  .controller('SingleProduct',['$route','Product', function ($route, Product) {
     var one = this;
     var productId = parseInt($route.current.params.productId);
     Product.getProductsAll().success(function (data) {
@@ -11,4 +11,4 @@ angular.module('testua')
     });
 
 
-  });
+  }]);

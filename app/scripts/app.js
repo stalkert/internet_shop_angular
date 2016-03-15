@@ -12,7 +12,7 @@ angular
   .module('testua', [
     'ngRoute'
   ])
-  .config(function ($routeProvider) {
+  .config(['$routeProvider',function ($routeProvider) {
     $routeProvider
       .when('/oplata_i_dostavka', {
         templateUrl: 'views/oplata-i-dostavka.html',
@@ -43,4 +43,4 @@ angular
       .otherwise({
         redirectTo: '/main'
       });
-  });
+  }]);

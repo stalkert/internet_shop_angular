@@ -1,6 +1,6 @@
 'use strict';
 angular.module('testua')
-  .factory('Product', function ProductFactory($http,$rootScope) {
+  .factory('Product',['$http','$rootScope', function ProductFactory($http,$rootScope) {
 
     return {
       getProductsAll: function () {
@@ -23,4 +23,4 @@ angular.module('testua')
         }
       }
     };
-  });
+  }]);

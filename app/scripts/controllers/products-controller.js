@@ -1,6 +1,6 @@
 'use strict';
 angular.module('testua')
-  .controller('ListProducts', function (Product, $rootScope) {
+  .controller('ListProducts',['Product','$rootScope', function (Product, $rootScope) {
     var listProduct = this;
     Product.getProductsAll()
       .success(function (data) {
@@ -8,4 +8,4 @@ angular.module('testua')
         $rootScope.choosenId = [];
         $rootScope.getFilterPoducts = Product.getFilterPoducts;
       });
-  });
+  }]);
