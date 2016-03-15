@@ -11,12 +11,12 @@ angular.module('testua')
 
       },
       getFilterPoducts: function (product) {
-        var choosenIdLength = $rootScope.choosenId.length;
+        var choosenIdLength = $rootScope.chosenId.length;
         if (choosenIdLength === 0) {
           return true;
         } else {
           for (var i = 0; i < choosenIdLength; i++) {
-            if (product.categoryId === $rootScope.choosenId[i]) {
+            if (product.categoryId === $rootScope.chosenId[i]) {
               return true;
             }
           }

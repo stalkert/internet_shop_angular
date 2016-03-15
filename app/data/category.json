@@ -1,7 +1,7 @@
 [
   {
     "catName": "Автоматика",
-    "main": true,
+    "parentId": 0,
     "categoryId": 1,
     "listSubCat": [
       2,
@@ -10,7 +10,7 @@
   },
   {
     "catName": "Датчики и преобразователи",
-    "main": false,
+    "parentId": 1,
     "categoryId": 2,
     "listSubCat": [
       4,
@@ -20,7 +20,7 @@
   },
   {
     "catName": "Регулировка и управление",
-    "main": false,
+    "parentId": 2,
     "categoryId": 3,
     "listSubCat": [
       7,
@@ -29,37 +29,37 @@
   },
   {
     "catName": "Датчики индукционные",
-    "main": false,
+    "parentId": 2,
     "categoryId": 4,
     "listSubCat": false
   },
   {
     "catName": "Датчики объема",
-    "main": false,
+    "parentId": 2,
     "categoryId": 5,
     "listSubCat": false
   },
   {
     "catName": "Датчики фотооптические",
-    "main": false,
+    "parentId": 3,
     "categoryId": 6,
     "listSubCat": false
   },
   {
     "catName": "Реле времени",
-    "main": false,
+    "parentId": 3,
     "categoryId": 7,
     "listSubCat": false
   },
   {
     "catName": "Счетчики",
-    "main": false,
+    "parentId": 3,
     "categoryId": 8,
     "listSubCat": false
   },
    {
     "catName": "Автомобильные аудиосистемы",
-    "main": true,
+    "parentId": 0,
     "categoryId": 9,
     "listSubCat": [
       10,
@@ -68,7 +68,7 @@
   },
   {
     "catName": "Звук",
-    "main": false,
+    "parentId": 9,
     "categoryId": 10,
     "listSubCat": [
       12,
@@ -78,7 +78,7 @@
   },
   {
     "catName": "Басы",
-    "main": false,
+    "parentId": 9,
     "categoryId": 11,
     "listSubCat": [
       15,
@@ -87,31 +87,31 @@
   },
   {
     "catName": "Нестандартный",
-    "main": false,
+    "parentId": 10,
     "categoryId": 12,
     "listSubCat": false
   },
   {
     "catName": "Громкий",
-    "main": false,
+    "parentId": 10,
     "categoryId": 13,
     "listSubCat": false
   },
   {
     "catName": "Тихий",
-    "main": false,
+    "parentId": 10,
     "categoryId": 14,
     "listSubCat": false
   },
   {
     "catName": "Супербасс",
-    "main": false,
+    "parentId": 11,
     "categoryId": 15,
     "listSubCat": false
   },
   {
     "catName": "Данс",
-    "main": false,
+    "parentId": 11,
     "categoryId": 16,
     "listSubCat": false
   }

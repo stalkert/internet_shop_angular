@@ -25,7 +25,9 @@ angular
         controllerAs: 'main'
       })
       .when('/products', {
-        templateUrl: 'views/products.html'
+        templateUrl: 'views/products.html',
+        controller:'HeadProductsController',
+        controllerAs:'headProducts'
 
       })
       .when('/products/:productId', {

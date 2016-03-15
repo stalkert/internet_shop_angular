@@ -1,12 +1,12 @@
 'use strict';
 angular.module('testua')
-  .controller('ListCategory',['$http','$rootScope', function ($http, $rootScope) {
+  .controller('ListCategory',['$http','$rootScope',function ($http, $rootScope) {
     var listCat = this;
     $http.get('data/category.json').success(function (data) {
       listCat.item = data;
-
+      $rootScope.listBreadcrumbs=[];
       listCat.listMainCategories = listCat.item.filter(function (elem) {
-        return elem.main === true;
+        return elem.parentId === 0;
       });
       listCat.getCategoryById = function (id) {
 
@@ -21,13 +21,13 @@ angular.module('testua')
         });
         return oneCat[0];
       };
-      listCat.restartSearch = function(){  $rootScope.choosenId=[];};
+      listCat.restartSearch = function(){  $rootScope.chosenId=[];$rootScope.listBreadcrumbs=[];};
 
       listCat.getCategoriesId = function (id) {
 
         var currentListSubCat = listCat.getCategoryObjById(id).listSubCat;
         if (currentListSubCat  === false) {
-          $rootScope.choosenId.push(id);
+          $rootScope.chosenId.push(id);
 
         } else {
 
@@ -35,6 +35,19 @@ angular.module('testua')
             listCat.getCategoriesId(elem);
           });
 
+        }
+      };
+
+      listCat.getCatWithParent = function(id){
+
+        var catObj = listCat.getCategoryObjById(id);
+        var nameCetegory = listCat.getCategoryById(id);
+        if (catObj.parentId === 0){
+          $rootScope.listBreadcrumbs.unshift(nameCetegory)
+        }else{
+
+          $rootScope.listBreadcrumbs.unshift(nameCetegory);
+          listCat.getCatWithParent(catObj.parentId);
         }
       };
     });

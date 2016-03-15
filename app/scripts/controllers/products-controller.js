@@ -5,7 +5,7 @@ angular.module('testua')
     Product.getProductsAll()
       .success(function (data) {
         listProduct.item = data;
-        $rootScope.choosenId = [];
+        $rootScope.chosenId = [];
         $rootScope.getFilterPoducts = Product.getFilterPoducts;
       });
   }]);
