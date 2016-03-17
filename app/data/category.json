@@ -20,7 +20,7 @@
   },
   {
     "catName": "Регулировка и управление",
-    "parentId": 2,
+    "parentId": 1,
     "categoryId": 3,
     "listSubCat": [
       7,

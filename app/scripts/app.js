@@ -24,10 +24,19 @@ angular
         controller: 'MainCtrl',
         controllerAs: 'main'
       })
+      .when('/o-nas', {
+        templateUrl: 'views/main2.html'
+
+      })
       .when('/products', {
-        templateUrl: 'views/products.html',
+        templateUrl: 'views/products-filtr.html',
         controller:'HeadProductsController',
         controllerAs:'headProducts'
+
+      })
+      .when('/products/category/:categoryId', {
+        templateUrl: 'views/products-route.html'
+
 
       })
       .when('/products/:productId', {

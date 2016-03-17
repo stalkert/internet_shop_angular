@@ -1,6 +1,6 @@
 'use strict';
 angular.module('testua')
-  .factory('Product',['$http','$rootScope', function ProductFactory($http,$rootScope) {
+  .factory('Product', ['$http', '$rootScope', function ProductFactory($http, $rootScope) {
 
     return {
       getProductsAll: function () {
@@ -21,6 +21,24 @@ angular.module('testua')
             }
           }
         }
+      },
+      getCurrentCategoryObj: function getCurrent(id) {
+        $http.get('data/category.json').success(function (data) {
+          var arr = data.filter(function (categoryObj) {
+            return categoryObj.categoryId === id;
+          });
+          console.log(arr[0]);
+          (function addIdToArray(id) {
+            if (arr[0].listSubCat === false) {
+              $rootScope.chosenId.push(id)
+            } else {
+              arr[0].listSubCat.forEach(function (elem) {
+                getCurrent(elem);
+              });
+            }
+          })(id);
+
+        });
       }
     };
   }]);
