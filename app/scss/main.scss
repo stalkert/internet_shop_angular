@@ -531,3 +531,10 @@ $red-color: #DA2028;
     font-style: italic;
   }
 }
+.breadcrumb{
+  li{
+    a:hover{
+      cursor: pointer;
+    }
+  }
+}

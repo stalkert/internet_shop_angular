@@ -2,6 +2,12 @@
 angular.module('testua')
   .controller('ListCategory',['$http','$rootScope',function ($http, $rootScope) {
     var listCat = this;
+    listCat.showAdvertasing = true;
+    listCat.toggleShowAdv = function (param) {
+      //debugger;
+      listCat.showAdvertasing = param;
+    };
+
     $http.get('data/category.json').success(function (data) {
       listCat.item = data;
       $rootScope.listBreadcrumbs=[];
@@ -43,12 +49,14 @@ angular.module('testua')
         var catObj = listCat.getCategoryObjById(id);
         var nameCetegory = listCat.getCategoryById(id);
         if (catObj.parentId === 0){
-          $rootScope.listBreadcrumbs.unshift(nameCetegory)
+          $rootScope.listBreadcrumbs.unshift([nameCetegory,id])
         }else{
 
-          $rootScope.listBreadcrumbs.unshift(nameCetegory);
+          $rootScope.listBreadcrumbs.unshift([nameCetegory,id]);
           listCat.getCatWithParent(catObj.parentId);
         }
       };
+
+
     });
   }]);

@@ -1,6 +1,6 @@
 <div class="col-md-12">
   <ol class="breadcrumb">
-    <li><a href="#">Каталог</a></li>
-    <li ng-repeat="breadcrumb in listBreadcrumbs"><a href="#">{{breadcrumb}}</a></li>
+    <li><a ng-click="categories.toggleShowAdv(true);">Каталог</a></li>
+    <li ng-repeat="breadcrumb in listBreadcrumbs"><a ng-click="categories.restartSearch();categories.getCategoriesId(breadcrumb[1]);categories.getCatWithParent(breadcrumb[1])">{{breadcrumb[0]}}</a></li>
   </ol>
 </div>

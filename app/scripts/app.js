@@ -25,8 +25,9 @@ angular
         controllerAs: 'main'
       })
       .when('/o-nas', {
-        templateUrl: 'views/main2.html'
-
+        templateUrl: 'views/main2.html',
+        controller:'ListCategory',
+        controllerAs:'categories'
       })
       .when('/products', {
         templateUrl: 'views/products-filtr.html',
