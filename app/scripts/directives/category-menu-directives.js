@@ -3,9 +3,9 @@ angular.module('testua')
   .directive('categoryMenu', function () {
     return {
       restrict: 'E',
-      templateUrl: 'views/category-menu.html'
-      //controller: 'ListCategory',
-      //controllerAs: 'categories'
+      templateUrl: 'views/category-menu.html',
+      controller: 'ListCategory',
+      controllerAs: 'categories'
 
     };
   });
