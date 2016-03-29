@@ -5,3 +5,5 @@
 /bower_components
 /.idea
 /test
+/.idea/workspace.xml
+/.idea/**.*

@@ -1,0 +1,33 @@
+<div class="row" id="four-line">
+  <h2 class="head-category  col-md-3">Лидеры продаж</h2>
+</div>
+
+<div class="row item-list">
+
+
+  <div class="item-cart col-md-3 col-xs-6" ng-repeat="product in products.item | filter:{leadership:true}">
+    <div class="item-img text-center"><img ng-src="{{product.img}}"></div>
+    <div class="item-brend">{{product.brend}}</div>
+    <div class="item-name"><strong>{{product.cod}}, {{product.title}}</strong></div>
+    <div class="item-price"><span>{{product.price}} грн.</span></div>
+    <div class="add-to-cart">
+      <strong><a ng-href="#/products/{{product.id}}">Подробнее</a></strong>
+    </div>
+  </div>
+
+</div>
+<div class="row">
+  <h2 class="head-category  col-md-3 ">Новинки</h2>
+</div>
+
+<div class="row item-list">
+  <div class="item-cart col-md-3 col-xs-6" ng-repeat="product in products.item | filter:{latest:true}">
+    <div class="item-img text-center"><img ng-src="{{product.img}}"></div>
+    <div class="item-brend">{{product.brend}}</div>
+    <div class="item-name"><strong>{{product.cod}}, {{product.title}}</strong></div>
+    <div class="item-price"><span>{{product.price}} грн.</span></div>
+    <div class="add-to-cart">
+      <strong><a ng-href="#/products/{{product.id}}">Подробнее</a></strong>
+    </div>
+  </div>
+</div>

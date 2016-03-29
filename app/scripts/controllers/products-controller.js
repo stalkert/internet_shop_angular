@@ -43,5 +43,7 @@ angular.module('testua')
         Product.getCurrentCategoryObj(catId);
         $rootScope.chosenId =[];
         $rootScope.getFilterPoducts = Product.getFilterPoducts;
+        $rootScope.getFilterPrice = Product.getPoductsByPrice;
+        console.log($rootScope.getFilterPrice);
       });
   }]);

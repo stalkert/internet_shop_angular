@@ -1,7 +1,15 @@
 'use strict';
 angular.module('testua')
-  .controller('ListCategory',['$http','$rootScope',function ($http, $rootScope) {
+  .controller('ListCategory',['$http','$rootScope','Product',function ($http, $rootScope,Product) {
     var listCat = this;
+    //setTimeout(function(){
+    //  alert(listCat.lowPrice);
+    //},1000);
+
+    listCat.low=listCat.lowPrice;
+
+    //$rootScope.lowPrice = 0;
+    //$rootScope.highPrice = 25000;
     listCat.showAdvertasing = true;
     listCat.toggleShowAdv = function (param) {
       //debugger;
@@ -9,6 +17,8 @@ angular.module('testua')
     };
 
     $http.get('data/category.json').success(function (data) {
+      //$rootScope.lowPrice=0;
+      //$rootScope.highPrice=2000;
       listCat.item = data;
       $rootScope.listBreadcrumbs=[];
       listCat.listMainCategories = listCat.item.filter(function (elem) {
@@ -58,5 +68,11 @@ angular.module('testua')
       };
 
 
+
+      //$rootScope.highPrice = 5000;
+      //$rootScope.lowPrice = this.lowPrice;
+      //alert(this.lowPrice);
+
     });
+    //debugger;
   }]);

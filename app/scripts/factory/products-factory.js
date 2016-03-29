@@ -22,6 +22,14 @@ angular.module('testua')
           }
         }
       },
+      setRootScopePrice: function(low,high){
+        $rootScope.lowPrice = low;
+        $rootScope.highPrice = high;
+      },
+      getPoductsByPrice:function (product) {
+        //debugger;
+        return product.price >= $rootScope.lowPrice && product.price <= $rootScope.highPrice;
+      },
       getCurrentCategoryObj: function getCurrent(id) {
         $http.get('data/category.json').success(function (data) {
           var arr = data.filter(function (categoryObj) {

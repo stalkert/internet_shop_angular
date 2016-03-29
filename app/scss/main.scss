@@ -446,6 +446,7 @@ $red-color: #DA2028;
 
 .category-lev-0 {
   position: relative;
+  margin-bottom: 20px;
   a:hover {
     cursor:pointer!important;
   }
@@ -537,4 +538,11 @@ $red-color: #DA2028;
       cursor: pointer;
     }
   }
+}
+.slider.slider-horizontal{
+  width:97%!important;
+}
+.padding0{
+  padding-left: 0;
+  padding-right: 5px;
 }
