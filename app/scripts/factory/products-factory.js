@@ -6,14 +6,28 @@ angular.module('testua')
       getProductsAll: function () {
         return $http.get('data/product.json');
       },
-      getBrends: function (param) {
-        var brends = [];
+      getBrends: function () {
+        var brendsArr = [];
         return $http.get('data/product.json').success(function (data) {
           data.forEach(function (item) {
-            brends.push(item.brend);
+            brendsArr.push([item.brend,item.categoryId,true]);
           });
-          param.brends = unic(brends);
-        });
+          //debugger;
+          next: for(var j = 0; j < brendsArr.length; j++) {
+
+            for (var i = 0; i < $rootScope.chosenId.length; i++) {
+              if (brendsArr[j][1] === $rootScope.chosenId[i]) {
+                brendsArr[j][2] = true;
+                continue next;
+              } else {
+                brendsArr[j][2] = false;
+              }
+            }
+          }
+          $rootScope.arrBrends = unic(brendsArr);
+          });
+
+
         function unic(arr) {
           var result = [];
 
@@ -21,7 +35,7 @@ angular.module('testua')
             for (var i = 0; i < arr.length; i++) {
               var brend = arr[i];
               for (var j = 0; j < result.length; j++) {
-                if (result[j] === brend) continue nextInput;
+                if (result[j][0] === brend[0]) continue nextInput;
               }
               result.push(brend);
             }

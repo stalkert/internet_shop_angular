@@ -19,12 +19,12 @@ angular
         controller: 'PayAndDelivery',
         controllerAs: 'pad'
       })
+      //.when('/main', {
+      //  templateUrl: 'views/main.html',
+      //  controller: 'MainCtrl',
+      //  controllerAs: 'main'
+      //})
       .when('/main', {
-        templateUrl: 'views/main.html',
-        controller: 'MainCtrl',
-        controllerAs: 'main'
-      })
-      .when('/o-nas', {
         templateUrl: 'views/main2.html',
         controller:'ListCategory',
         controllerAs:'categories'

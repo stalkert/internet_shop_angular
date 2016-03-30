@@ -1,8 +1,8 @@
 <h3>Фильтр по брендам</h3>
-<div class="checkbox" ng-repeat="brend in brends.brends">
+<div class="checkbox" ng-repeat="brend in arrBrends" ng-show="brend[2] === true">
   <label>
-    <input type="checkbox" value="{{brend}}" ng-click="brends.addBrend(brend)">
-    {{brend}}
+    <input type="checkbox" value="{{brend[0]}}" ng-click="brends.addBrend(brend[0])">
+    {{brend[0]}}
   </label>
 </div>
 

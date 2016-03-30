@@ -3,6 +3,7 @@ angular.module('testua')
   .controller('ListCategory',['$http','$rootScope','Product',function ($http, $rootScope,Product) {
     var listCat = this;
 
+    listCat.showBrends = Product.getBrends;
     listCat.showAdvertasing = true;
     listCat.toggleShowAdv = function (param) {
       //debugger;
