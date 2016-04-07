@@ -1,7 +1,10 @@
 <h3>Фильтр по брендам</h3>
 <div class="checkbox" ng-repeat="brend in arrBrends" ng-show="brend[2] === true">
-  <label>
-    <input type="checkbox" value="{{brend[0]}}" ng-click="brends.addBrend(brend[0])">
+
+    <input type="checkbox" id="{{brend[0]}}" ng-model="check" ng-click="brends.addBrend(brend[0],check)">
+  {{check}}
+  <label for="{{brend[0]}}">
+
     {{brend[0]}}
   </label>
 </div>

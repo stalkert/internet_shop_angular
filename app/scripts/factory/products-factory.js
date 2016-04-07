@@ -24,6 +24,9 @@ angular.module('testua')
               }
             }
           }
+          brendsArr = brendsArr.filter(function(item){
+            return item[2] === true;
+          });
           $rootScope.arrBrends = unic(brendsArr);
           });
 
@@ -43,8 +46,10 @@ angular.module('testua')
           return result;
         }
       },
-      checkedBrends: function (currentBrend) {
-        if ($rootScope.brend.some(function(item){return item === currentBrend})) {
+      checkedBrends: function (currentBrend,check) {
+        //if (check && $rootScope.brend.some(function(item){return item === currentBrend})) {
+        if(!check){
+          //debugger;
           $rootScope.brend = $rootScope.brend.filter(function (item) {return item !==currentBrend;});
         } else {
           $rootScope.brend.push(currentBrend);
