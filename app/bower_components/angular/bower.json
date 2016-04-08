@@ -1,0 +1,9 @@
+{
+  "name": "angular",
+  "version": "1.5.0",
+  "license": "MIT",
+  "parentId": "./angular.js",
+  "ignore": [],
+  "dependencies": {
+  }
+}
