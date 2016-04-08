@@ -1,10 +1,19 @@
 'use strict';
 angular.module('testua')
-  .controller('ListCategory',['$http','$rootScope','Product',function ($http, $rootScope,Product) {
+  .controller('ListCategory', ['$http', '$rootScope', 'Product', function ($http, $rootScope, Product) {
     var listCat = this;
-
+    listCat.clearCheckbox = function () {
+      for (var key in listCat.check) {
+        listCat.check[key] = false;
+      }
+      $rootScope.brend =[];
+    };
     listCat.showBrends = Product.getBrends;
     listCat.showAdvertasing = true;
+    $rootScope.toggleShowAdv = function (param) {
+      //debugger;
+      listCat.showAdvertasing = param;
+    };
     listCat.toggleShowAdv = function (param) {
       //debugger;
       listCat.showAdvertasing = param;
@@ -13,7 +22,7 @@ angular.module('testua')
     $http.get('data/category.json').success(function (data) {
 
       listCat.item = data;
-      $rootScope.listBreadcrumbs=[];
+      $rootScope.listBreadcrumbs = [];
       listCat.listMainCategories = listCat.item.filter(function (elem) {
         return elem.parentId === 0;
       });
@@ -30,36 +39,38 @@ angular.module('testua')
         });
         return oneCat[0];
       };
-      listCat.restartSearch = function(){  $rootScope.chosenId=[];$rootScope.listBreadcrumbs=[];};
+      listCat.restartSearch = function () {
+        $rootScope.chosenId = [];
+        $rootScope.listBreadcrumbs = [];
+      };
 
       listCat.getCategoriesId = function (id) {
 
         var currentListSubCat = listCat.getCategoryObjById(id).listSubCat;
-        if (currentListSubCat  === false) {
+        if (currentListSubCat === false) {
           $rootScope.chosenId.push(id);
 
         } else {
 
-          currentListSubCat.forEach(function(elem){
+          currentListSubCat.forEach(function (elem) {
             listCat.getCategoriesId(elem);
           });
 
         }
       };
 
-      listCat.getCatWithParent = function(id){
+      listCat.getCatWithParent = function (id) {
 
         var catObj = listCat.getCategoryObjById(id);
         var nameCetegory = listCat.getCategoryById(id);
-        if (catObj.parentId === 0){
-          $rootScope.listBreadcrumbs.unshift([nameCetegory,id])
-        }else{
+        if (catObj.parentId === 0) {
+          $rootScope.listBreadcrumbs.unshift([nameCetegory, id])
+        } else {
 
-          $rootScope.listBreadcrumbs.unshift([nameCetegory,id]);
+          $rootScope.listBreadcrumbs.unshift([nameCetegory, id]);
           listCat.getCatWithParent(catObj.parentId);
         }
       };
-
 
 
       //$rootScope.highPrice = 5000;
