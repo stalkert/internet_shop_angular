@@ -4,8 +4,8 @@ angular.module('testua')
     var _this = this;
     Product.getBrends();
     _this.addBrend = Product.checkedBrends;
-    _this.clearCheckbox =function(){
-      _this.check = false;
-      alert('работает');
-    };
+    //_this.clearCheckbox =function(){
+    //  _this.check = false;
+    //  alert('работает');
+    //};
   }]);

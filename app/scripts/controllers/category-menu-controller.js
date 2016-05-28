@@ -4,6 +4,7 @@ angular.module('testua')
     var listCat = this;
     listCat.clearCheckbox = function () {
       for (var key in listCat.check) {
+        //alert(1);
         listCat.check[key] = false;
       }
       $rootScope.brend =[];
@@ -43,7 +44,10 @@ angular.module('testua')
         $rootScope.chosenId = [];
         $rootScope.listBreadcrumbs = [];
       };
-
+      $rootScope.restartSearch = function () {
+        $rootScope.chosenId = [];
+        $rootScope.listBreadcrumbs = [];
+      };
       listCat.getCategoriesId = function (id) {
 
         var currentListSubCat = listCat.getCategoryObjById(id).listSubCat;

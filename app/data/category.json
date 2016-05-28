@@ -114,6 +114,116 @@
     "parentId": 11,
     "categoryId": 16,
     "listSubCat": false
+  },
+  {
+    "catName": "Телефоны",
+    "parentId": 0,
+    "categoryId": 17,
+    "listSubCat": [18,19]
+  },
+  {
+    "catName": "Мобильные",
+    "parentId": 17,
+    "categoryId": 18,
+    "listSubCat": false
+  },
+  {
+    "catName": "Смартфоны",
+    "parentId": 17,
+    "categoryId": 19,
+    "listSubCat": false
+  },
+
+  {
+    "catName": "Планшеты",
+    "parentId": 0,
+    "categoryId": 20,
+    "listSubCat": [21,22]
+  },
+  {
+    "catName": "7 дюймов",
+    "parentId": 20,
+    "categoryId": 21,
+    "listSubCat": false
+  },
+  {
+    "catName": "10 дюймов",
+    "parentId": 20,
+    "categoryId": 22,
+    "listSubCat": false
+  },
+  {
+    "catName": "Аксесуары",
+    "parentId": 0,
+    "categoryId": 23,
+    "listSubCat": [24,25,26]
+  },
+  {
+    "catName": "Гарнитуры",
+    "parentId": 23,
+    "categoryId": 24,
+    "listSubCat": [27,28,29]
+  },
+  {
+    "catName": "Чехлы",
+    "parentId": 23,
+    "categoryId": 25,
+    "listSubCat": [30,31,32]
+  },
+  {
+    "catName": "Пленки",
+    "parentId": 23,
+    "categoryId": 26,
+    "listSubCat":[33,34]
+  },
+  {
+    "catName": "Блютуз",
+    "parentId": 24,
+    "categoryId": 27,
+    "listSubCat":false
+  },
+  {
+    "catName": "Проводные",
+    "parentId": 24,
+    "categoryId": 28,
+    "listSubCat":false
+  },
+  {
+    "catName": "Наушники",
+    "parentId": 24,
+    "categoryId": 29,
+    "listSubCat":false
+  },
+  {
+    "catName": "Пластиковые",
+    "parentId": 25,
+    "categoryId": 30,
+    "listSubCat":false
+  },
+  {
+    "catName": "Кожаные",
+    "parentId": 25,
+    "categoryId": 31,
+    "listSubCat":false
+  },
+  {
+    "catName": "Силиконовые",
+    "parentId": 25,
+    "categoryId": 32,
+    "listSubCat":false
+  },
+  {
+    "catName": "Поштучно",
+    "parentId": 26,
+    "categoryId": 33,
+    "listSubCat":false
+  },
+  {
+    "catName": "Наборы",
+    "parentId": 26,
+    "categoryId": 34,
+    "listSubCat":false
   }
+
 ]
 

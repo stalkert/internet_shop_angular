@@ -10,7 +10,9 @@
  */
 angular
   .module('testua', [
-    'ngRoute'
+    'ngRoute',
+    'ngAnimate',
+    'ui.bootstrap'
   ])
   .config(['$routeProvider',function ($routeProvider) {
     $routeProvider

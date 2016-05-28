@@ -288,13 +288,13 @@ $red-color: #DA2028;
 
 .item-cart {
   position: relative;
-  min-height: 300px;
+  min-height: 328px;
   .item-price {
     position: absolute;
     left: 10px;
     bottom: 20px;
     color: orange;
-    font-size: 1.2em;
+    font-size: 1em;
   }
   .add-to-cart {
     position: absolute;
@@ -507,7 +507,7 @@ $red-color: #DA2028;
 
 .single-product {
   position: relative;
-  height: 407px;
+  height: 467px;
   .single-product-add {
     @include red_button;
     width: 200px;
@@ -548,4 +548,7 @@ $red-color: #DA2028;
 }
 .green-border{
   border: 1px solid #00A000;
+}
+.delivery-block{
+  margin-bottom: 60px;
 }

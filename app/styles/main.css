@@ -9080,7 +9080,7 @@ a {
 /* line 289, ../scss/main.scss */
 .item-cart {
   position: relative;
-  min-height: 300px;
+  min-height: 328px;
 }
 /* line 292, ../scss/main.scss */
 .item-cart .item-price {
@@ -9088,7 +9088,7 @@ a {
   left: 10px;
   bottom: 20px;
   color: orange;
-  font-size: 1.2em;
+  font-size: 1em;
 }
 /* line 299, ../scss/main.scss */
 .item-cart .add-to-cart {
@@ -9320,7 +9320,7 @@ a {
 /* line 508, ../scss/main.scss */
 .single-product {
   position: relative;
-  height: 407px;
+  height: 467px;
 }
 /* line 511, ../scss/main.scss */
 .single-product .single-product-add {
@@ -9373,4 +9373,9 @@ a {
 /* line 549, ../scss/main.scss */
 .green-border {
   border: 1px solid #00A000;
+}
+
+/* line 552, ../scss/main.scss */
+.delivery-block {
+  margin-bottom: 60px;
 }

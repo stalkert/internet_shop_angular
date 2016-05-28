@@ -1,7 +1,7 @@
 <div class="item-cart col-md-12 ">
   <div class="row">
     <div class="item-img-one-product text-center col-md-4">
-      <img ng-src="{{single.productById[0].img}}"
+      <img ng-src="{{single.productById[0][single.color]}}"
            ng-class="{'green-border':single.borderClass}"
            ng-click="single.setGreenBorder()"></div>
     <div class="single-product col-md-8">
@@ -10,7 +10,41 @@
       <div class="single-poduct-model"><span>Модель:&nbsp</span> <strong>{{single.productById[0].cod}}</strong></div>
       <div class="single-poduct-description"><span>Описание:   </span>{{single.productById[0].description}}</div>
       <div class="single-product-price">{{single.productById[0].price}} грн.</div>
-      <div class="single-product-add"> Заказать </div>
+      <div class="radio-color">
+        <label for="white-color"> Белый &nbsp</label><input type="radio" name="chooseColor" id="white-color"
+                                                            ng-model="single.color" value="imgw">
+        <label for="black-color"> Черный &nbsp</label><input type="radio" name="chooseColor" id="black-color"
+                                                             ng-model="single.color" value="imgb">
+
+      </div>
+      <div class="delivery-block">
+        <p>Выберете доставку</p>
+        <select name="delivery-select" ng-model="delivery">
+          <option value="Курьером">Курьером</option>
+          <option value="Новой Почтой">Новой почтой</option>
+          <option value="Самовывоз">Самовывоз</option>
+        </select>
+
+      </div>
+      <div ng-controller="ModalDemoCtrl" >
+        <script type="text/ng-template" id="myModalContent.html">
+          <div class="modal-header">
+            <h3 class="modal-title">Детали вашего заказа</h3>
+          </div>
+          <div class="modal-body">
+            <p>Название: {{items[0][0].title}}</p>
+            <p>Производитель: {{items[0][0].brend}}</p>
+            <p>Доставка: {{items[1]}}</p>
+            <p>Сумма заказа: {{items[0][0].price}} грн.</p>
+
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-primary" type="button" ng-click="ok()">OK</button>
+            <button class="btn btn-warning" type="button" ng-click="cancel()">Cancel</button>
+          </div>
+        </script>
+        <button type="submit" class="single-product-add" ng-click="open()"> Заказать</button>
+      </div>
     </div>
   </div>
 </div>

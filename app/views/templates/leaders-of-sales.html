@@ -6,7 +6,7 @@
 
 
   <div class="item-cart col-md-3 col-xs-6" ng-repeat="product in products.item | filter:{leadership:true}">
-    <div class="item-img text-center"><img ng-src="{{product.img}}"></div>
+    <div class="item-img text-center"><img ng-src="{{product.imgw}}"></div>
     <div class="item-brend">{{product.brend}}</div>
     <div class="item-name"><strong>{{product.cod}}, {{product.title}}</strong></div>
     <div class="item-price"><span>{{product.price}} грн.</span></div>
@@ -22,7 +22,7 @@
 
 <div class="row item-list">
   <div class="item-cart col-md-3 col-xs-6" ng-repeat="product in products.item | filter:{latest:true}">
-    <div class="item-img text-center"><img ng-src="{{product.img}}"></div>
+    <div class="item-img text-center"><img ng-src="{{product.imgw}}"></div>
     <div class="item-brend">{{product.brend}}</div>
     <div class="item-name"><strong>{{product.cod}}, {{product.title}}</strong></div>
     <div class="item-price"><span>{{product.price}} грн.</span></div>

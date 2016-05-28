@@ -3,7 +3,7 @@
 
     <input type="checkbox" id="{{brend[0]}}" ng-model="categories.check[$index]" ng-click="brends.addBrend(brend[0],categories.check[$index])">
     <label for="{{brend[0]}}">
-    {{brend[0]}}
+    {{brend[0]}}&nbsp{{categories.check[$index]}}
   </label>
 </div>
 <button class="btn btn-default" ng-click="categories.clearCheckbox();">Очистить фильтры</button>
