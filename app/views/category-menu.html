@@ -3,7 +3,7 @@
     <input id="search" type="text" class="form-control" placeholder="Поиск" ng-model="search">
     <button id="button-search" class="btn btn-default" type="button"><i class="glyphicon glyphicon-search"></i></button>
   </div>
-  <button id='catalog' type="button" class="btn btn-danger"><a ng-click="categories.toggleShowAdv(false);restartSearch();">Каталог</a>
+  <button id='catalog' type="button" class="btn btn-danger"><a ng-href="#/main/catalog" ng-click="categories.toggleShowAdv(false);restartSearch();" >Каталог</a>
   </button>
 
   <ul class="nav category-lev-0">

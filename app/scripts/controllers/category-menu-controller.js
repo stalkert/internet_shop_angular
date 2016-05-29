@@ -1,7 +1,9 @@
 'use strict';
 angular.module('testua')
-  .controller('ListCategory', ['$http', '$rootScope', 'Product', function ($http, $rootScope, Product) {
+  .controller('ListCategory', ['$http', '$rootScope', 'Product','$route','$timeout', function ($http, $rootScope, Product,$route,$timeout) {
     var listCat = this;
+    var catalog = $route.current.params.catalog;
+
     listCat.clearCheckbox = function () {
       for (var key in listCat.check) {
         //alert(1);
@@ -82,5 +84,7 @@ angular.module('testua')
       //alert(this.lowPrice);
 
     });
-    //debugger;
+    if(catalog ==='catalog'){
+      listCat.showAdvertasing = false;
+    }
   }]);

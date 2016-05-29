@@ -9,6 +9,11 @@
       </div>
       <div class="row item-list" ng-show="categories.showAdvertasing === false">
         <product-item></product-item>
+
+      </div>
+      <div  id="pagination" class="row" ng-show="categories.showAdvertasing === false">
+        <pagination num-pages="pageCount" current-page="pageNo">
+        </pagination>
       </div>
       <div class="row" id="category-list-img" ng-show="categories.showAdvertasing === true">
         <div class="item col-md-3 col-xs-6">

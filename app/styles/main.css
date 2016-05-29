@@ -9379,3 +9379,12 @@ a {
 .delivery-block {
   margin-bottom: 60px;
 }
+
+/* line 555, ../scss/main.scss */
+#pagination {
+  text-align: center;
+}
+/* line 557, ../scss/main.scss */
+#pagination a {
+  cursor: pointer;
+}

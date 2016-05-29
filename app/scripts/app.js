@@ -31,6 +31,12 @@ angular
         controller:'ListCategory',
         controllerAs:'categories'
       })
+      .when('/main/:catalog', {
+        templateUrl: 'views/main2.html',
+        controller:'ListCategory',
+        controllerAs:'categories'
+
+      })
       .when('/products', {
         templateUrl: 'views/products-filtr.html',
         controller:'HeadProductsController',

@@ -1,4 +1,4 @@
-<div class="item-cart col-md-3 col-xs-6" ng-repeat="product in products.item | filter:search | filter:getFilterPoducts | filter: getFilterPrice |filter:getFilterBrend">
+<div class="item-cart col-md-3 col-xs-6" ng-repeat="product in filteredProducts=(products.item | filter:search | filter:getFilterPoducts | filter: getFilterPrice |filter:getFilterBrend)| pagination:pageNo:pageSize">
 
   <div class="item-img text-center"><img ng-src="{{product.imgw}}"></div>
     <div class="item-brend">{{product.brend}}</div>
@@ -8,3 +8,4 @@
         <strong><a ng-href="#/products/{{product.id}}">Подробнее</a></strong>
     </div>
 </div>
+

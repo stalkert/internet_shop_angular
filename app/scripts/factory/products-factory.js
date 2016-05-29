@@ -89,12 +89,14 @@ angular.module('testua')
           });
           console.log(arr[0]);
           (function addIdToArray(id) {
-            if (arr[0].listSubCat === false) {
+            if (arr[0] && arr[0].listSubCat === false) {
               $rootScope.chosenId.push(id)
             } else {
-              arr[0].listSubCat.forEach(function (elem) {
-                getCurrent(elem);
-              });
+              if(arr[0]) {
+                arr[0].listSubCat.forEach(function (elem) {
+                  getCurrent(elem);
+                });
+              }
             }
           })(id);
 

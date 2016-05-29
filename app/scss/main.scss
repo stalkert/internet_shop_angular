@@ -552,3 +552,9 @@ $red-color: #DA2028;
 .delivery-block{
   margin-bottom: 60px;
 }
+#pagination{
+  text-align: center;
+  a{
+    cursor: pointer;
+  }
+}
