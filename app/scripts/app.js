@@ -18,8 +18,7 @@ angular
     $routeProvider
       .when('/oplata_i_dostavka', {
         templateUrl: 'views/oplata-i-dostavka.html',
-        controller: 'PayAndDelivery',
-        controllerAs: 'pad'
+        controller: 'PayAndDelivery'
       })
       //.when('/main', {
       //  templateUrl: 'views/main.html',

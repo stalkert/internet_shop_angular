@@ -9,9 +9,9 @@ angular.module('testua')
       one.borderClass = !one.borderClass;
     };
     var productId = parseInt($route.current.params.productId);
-    Product.getProductsAll().success(function (data) {
-      one.product = data;
-      one.productById = data.filter(function (item) {
+    Product.getProductsAll(function (data) {
+      one.product = data.val();
+      one.productById = data.val().filter(function (item) {
         return item.id == productId;
       });
       $scope.$watch('delivery', function () {
